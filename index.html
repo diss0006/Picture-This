@@ -16,15 +16,42 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
     <picture>
+      <!--Responsive Images for Landscape Images-->
+      <source srcset="images/museum-320x.jpg 1x,
+                      images/museum-640x.jpg 2x,
+                      images/museum-960x.jpg 3x"
+              media="(max-width: 320px)">
+
+      <source srcset="images/museum-480x.jpg 1x,
+                      images/museum-960x.jpg 2x,
+                      images/museum-1440x.jpg 3x"
+              media="(max-width: 480px)">
+
+      <source srcset="images/museum-720x.jpg 1x,
+                      images/museum-1440x.jpg 2x,
+                      images/museum-2160x.jpg 3x"
+              media="(max-width: 720px)">
+
       <source srcset="images/museum-960x.jpg 1x,
                       images/museum-1920x.jpg 2x,
                       images/museum-2880x.jpg 3x"
               media="(max-width: 959px)">
 
+      <!--Responsive Images for Square Images-->
+      <source srcset="images/museum-480.jpg 1x,
+                      images/museum-960.jpg 2x,
+                      images/museum-1440.jpg 3x"
+              media="(min-width: 960px) and (max-width: 1279px)">
+
+      <source srcset="images/museum-640.jpg 1x,
+                      images/museum-1280.jpg 2x,
+                      images/museum-1920.jpg 3x"
+              media="(min-width: 1280px) and (max-width: 1599px)">
+              
       <source srcset="images/museum-800.jpg 1x,
                       images/museum-1600.jpg 2x,
                       images/museum-2400.jpg 3x"
-              media="(min-width: 960px)">
+              media="(min-width: 1600px)">
 
       <img src="images/museum.jpg" alt="fallback image">
     </picture>    
